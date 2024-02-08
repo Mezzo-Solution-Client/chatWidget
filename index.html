@@ -73,28 +73,28 @@
                             "name": "firstname",
                             "maxlength": "100",
                             "placeholder": "Required",
-                            "label": "First Name"
+                            "label": "Prénom"
                         },
                         {
                             "id": "cx_webchat_form_lastname",
                             "name": "lastname",
                             "maxlength": "100",
                             "placeholder": "Required",
-                            "label": "Last Name"
+                            "label": "Nom"
                         },
                         {
                             "id": "cx_webchat_form_email",
                             "name": "email",
                             "maxlength": "100",
-                            "placeholder": "Optional",
+                            "placeholder": "Required",
                             "label": "Email"
                         },
                         {
                             "id": "cx_webchat_form_subject",
                             "name": "subject",
                             "maxlength": "100",
-                            "placeholder": "Optional",
-                            "label": "Subject"
+                            "placeholder": "Required",
+                            "label": "Sujet"
                         }
                     ]
                 }
@@ -103,8 +103,9 @@
         const customPlugin = CXBus.registerPlugin('Custom');
     </script>
 
-    <button type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">Start
-        Chat</button>
+    <div class="divbutton">
+        <button type="button" id="chat-button" class="button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">COMMENCER UN CHAT</button>
+    </div>
 
 
 

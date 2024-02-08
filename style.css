@@ -12,6 +12,31 @@ html {
     scroll-behavior: smooth;
 }
 
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.divbutton {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
+    padding: 20px;
+}
+
+
+
 body {
     background-color: #f1f0ef;
     font-family: theFont;
