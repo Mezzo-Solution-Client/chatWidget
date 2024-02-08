@@ -23,9 +23,26 @@
         </script>
 
     <script>
-        window._genesys.widgets.main.theme = "light"; // or "dark"
         window._genesys = {
             "widgets": {
+                "main": {
+                    "theme": 'light',
+                    "lang": 'fr',
+                    "i18n": 'i18n.json',
+                    "mobileMode": 'auto',
+                    "mobileModeBreakpoint": 600,
+                    "debug": true,
+                    "downloadGoogleFont": true,
+                    "googleFontUrl": 'https://apps.mypurecloud.de/webfonts/roboto.css',
+                    "header": { 'Authorization': 'value' },
+                    "cookieOptions": {
+                        "secure": true,
+                        "domain": 'test.com',
+                        "path": '/',
+                        "sameSite": 'Strict'
+                    }
+
+                },
                 "webchat": {
                     "transport": {
                         "type": "purecloud-v2-sockets",
@@ -105,7 +122,8 @@
     </script>
 
     <div class="divbutton">
-        <button type="button" id="chat-button" class="button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">COMMENCER UN CHAT</button>
+        <button type="button" id="chat-button" class="button"
+            onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">COMMENCER UN CHAT</button>
     </div>
 
 
